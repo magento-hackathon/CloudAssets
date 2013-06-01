@@ -7,34 +7,34 @@
     </modules>
     <global>
         <models>
-            <cloudassets>
+            <hackathon_cloudassets>
                 <class>Hackathon_CloudAssets_Model</class>
-            </cloudassets>
+            </hackathon_cloudassets>
         </models>
         <helpers>
-            <cloudassets>
+            <hackathon_cloudassets>
                 <class>Hackathon_CloudAssets_Helper</class>
-            </cloudassets>
+            </hackathon_cloudassets>
         </helpers>
     </global>
     <adminhtml>
         <events>
             <catalog_product_gallery_upload_image_after>
                 <observers>
-                    <hackathon_uploadobserver>
+                    <hackathon_cloudassets_uploadobserver>
                         <type>singleton</type>
-                        <class>cloudassets/observer_adminhtml_product</class>
-                        <method>abc</method>
-                    </hackathon_uploadobserver>
+                        <class>hackathon_cloudassets/observer_adminhtml_product</class>
+                        <method>resizeOnUpload</method>
+                    </hackathon_cloudassets_uploadobserver>
                 </observers>
             </catalog_product_gallery_upload_image_after>
             <catalog_product_media_save_before>
                 <observers>
-                    <hackathon_mediasaveobserver>
+                    <hackathon_cloudassets_onproductmediasave>
                         <type>singleton</type>
-                        <class>cloudassets/observer_adminhtml_product</class>
-                        <method>abc</method>
-                    </hackathon_mediasaveobserver>
+                        <class>hackathon_cloudassets/observer_adminhtml_product</class>
+                        <method>onProductMediaSave</method>
+                    </hackathon_cloudassets_onproductmediasave>
                 </observers>
             </catalog_product_media_save_before>
         </events>

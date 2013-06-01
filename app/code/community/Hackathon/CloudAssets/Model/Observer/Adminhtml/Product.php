@@ -9,9 +9,16 @@
 
 class Hackathon_CloudAssets_Model_Observer_Adminhtml_Product
 {
-    public function abc()
+    public function resizeOnUpload(Varien_Event_Observer $observer)
     {
-        $i = 1;
+        /*
+         * Possibility to do some fancy stuff like resizing.
+         */
+        return $this;
+    }
+
+    public function onProductMediaSave(Varien_Event_Observer $observer){
+
         return $this;
     }
 }
