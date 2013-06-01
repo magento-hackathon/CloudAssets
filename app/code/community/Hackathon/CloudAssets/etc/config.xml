@@ -37,6 +37,16 @@
                     </hackathon_cloudassets_onproductmediasave>
                 </observers>
             </catalog_product_media_save_before>
+            <!-- TODO: Delete following observer. It's just for development reasons. -->
+            <controller_front_send_response_after>
+                <observers>
+                    <hackathon_cloudassets_clearcache>
+                        <type>singleton</type>
+                        <class>hackathon_cloudassets/observer_cache</class>
+                        <method>cleanCache</method>
+                    </hackathon_cloudassets_clearcache>
+                </observers>
+            </controller_front_send_response_after>
         </events>
     </adminhtml>
 </config>
