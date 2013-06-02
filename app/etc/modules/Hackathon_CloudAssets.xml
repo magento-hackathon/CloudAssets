@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<config>
-    <modules>
-        <Hackathon_CloudAssets>
-            <active>true</active>
-            <codePool>community</codePool>
-        </Hackathon_CloudAssets>
-    </modules>
-</config>
