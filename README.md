@@ -13,6 +13,7 @@ Our main goal was to avoid these mentioned problems within Magento. Our ideas we
 * Pre-populate the cached assets and assume everything is on the new shared storage facility
 * Files that bypass the IO-Wrapper during write could be synced with external tools
 * Using database instead of filesystem to store and share at least the media data
+* Extend Magento by throwing events before and after saving files to local storage.
 
 ## Drawbacks
 * Usage of IO-Wrapper is not wide spreaded
